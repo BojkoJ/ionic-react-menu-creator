@@ -4,10 +4,13 @@ Jednoduchá webová/mobilní aplikace v Ionicu (React) pro správu jídelních m
 
 ## Instalace
 
-1. Nainstalujte závislosti pomocí příkazu `npm install`.
-2. Spusťte projekt pomocí příkazu `ionic serve`.
-3. V druhém terminálu se přepněte do složky src pomocí `cd ./src`
-4. V druhém terminálu pak spusťte express server pomocí příkazu `node server.js`
+Chcete-li projekt spustit, je třeba mít nainstalovaný <b>[Node.js](https://nodejs.org/en).
+
+1. Nainstalujte Ionic CLI pomocí příkazu `npm install -g @ionic/cli`
+2. Nainstalujte závislosti pomocí příkazu `npm install`.
+3. Spusťte projekt pomocí příkazu `ionic serve`.
+4. V druhém terminálu se přepněte do složky src pomocí `cd ./src`
+5. V druhém terminálu pak spusťte express server pomocí příkazu `node server.js`
 
 ## Použití
 
