@@ -1,0 +1,13 @@
+<dayMeals>
+  <snídaně>Ovesná kaše - banánová</snídaně>
+  <oběd>Kuřecí stehno s rýží a houbovou omáčkou</oběd>
+  <večeře>Banán a croissant</večeře>
+  <ingredience>
+    <item>Banány</item>
+    <item>Croissant</item>
+    <item>Kuřecí stehna</item>
+    <item>Rýže</item>
+    <item>Houbová omáčka - plechovka</item>
+    <item>Ovesná kaše - banánová</item>
+  </ingredience>
+</dayMeals>
