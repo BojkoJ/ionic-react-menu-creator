@@ -30,8 +30,8 @@ interface WeekMeals {
 interface ShoppingListStore {
 	weekMeals: WeekMeals;
 	addMeal: (day: DayOfWeek, meal: DayMeal) => void;
-	addIngredient: (day: DayOfWeek, ingredient: string) => void; // Přidání ingredience do pole pro daný den
-	deleteIngredient: (day: DayOfWeek, ingredientIndex: number) => void; // Smazání ingredience z pole pro daný den
+	addIngredient: (day: DayOfWeek, ingredient: string) => void;
+	deleteIngredient: (day: DayOfWeek, ingredientIndex: number) => void;
 }
 
 const useShoppingListStore = create<ShoppingListStore>((set) => {
@@ -61,6 +61,7 @@ const useShoppingListStore = create<ShoppingListStore>((set) => {
 					[day]: {
 						...state.weekMeals[day],
 						...meal,
+
 						// Přidáme existující ingredience do nového jídla, pokud existují
 						ingredience:
 							meal.ingredience.length > 0
@@ -68,6 +69,7 @@ const useShoppingListStore = create<ShoppingListStore>((set) => {
 								: state.weekMeals[day].ingredience,
 					},
 				};
+
 				localStorage.setItem(
 					"weekMeals",
 					JSON.stringify(updatedWeekMeals)
@@ -80,19 +82,23 @@ const useShoppingListStore = create<ShoppingListStore>((set) => {
 			set((state) => {
 				const updatedMeal = {
 					...state.weekMeals[day],
+
 					ingredience: [
 						...state.weekMeals[day].ingredience,
 						ingredient,
 					],
 				};
+
 				const updatedWeekMeals = {
 					...state.weekMeals,
 					[day]: updatedMeal,
 				};
+
 				localStorage.setItem(
 					"weekMeals",
 					JSON.stringify(updatedWeekMeals)
 				);
+
 				return { weekMeals: updatedWeekMeals };
 			});
 		},
@@ -101,18 +107,22 @@ const useShoppingListStore = create<ShoppingListStore>((set) => {
 				const updatedIngredients = state.weekMeals[
 					day
 				].ingredience.filter((_, index) => index !== ingredientIndex);
+
 				const updatedMeal = {
 					...state.weekMeals[day],
 					ingredience: updatedIngredients,
 				};
+
 				const updatedWeekMeals = {
 					...state.weekMeals,
 					[day]: updatedMeal,
 				};
+
 				localStorage.setItem(
 					"weekMeals",
 					JSON.stringify(updatedWeekMeals)
 				);
+
 				return { weekMeals: updatedWeekMeals };
 			});
 		},
