@@ -1,0 +1,15 @@
+<dayMeals>
+    <snídaně>Vejce, chleba, šunka</snídaně>
+    <oběd>Kuřecí maso, rýže, zelenina</oběd>
+    <večeře>Těstoviny s rajčaty</večeře>
+    <ingredience>
+        <item>Vejce</item>
+        <item>Chleba</item>
+        <item>Šunka</item>
+        <item>Kuřecí maso</item>
+        <item>Rýže</item>
+        <item>Zelenina</item>
+        <item>Těstoviny</item>
+        <item>Rajčata</item>
+    </ingredience>
+</dayMeals>

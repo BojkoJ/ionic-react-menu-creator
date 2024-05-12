@@ -1,0 +1,17 @@
+{
+	"dayMeals": {
+		"snídaně": "Vejce, chleba, šunka",
+		"oběd": "Kuřecí maso, rýže, zelenina",
+		"večeře": "Těstoviny s rajčaty",
+		"ingredience": [
+			"Vejce",
+			"Chleba",
+			"Šunka",
+			"Kuřecí maso",
+			"Rýže",
+			"Zelenina",
+			"Těstoviny",
+			"Rajčata"
+		]
+	}
+}
