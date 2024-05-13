@@ -16,3 +16,6 @@ Chcete-li projekt spustit, je třeba mít nainstalovaný <b>[Node.js](https://no
 
 1. Po spuštění přejděte na webovou stránku aplikace - běží na `localhost:8100`.
 2. Nyní můžete používat aplikaci
+
+-   Ve složce filesToImport najdete example soubory, s vhodnou strukturou, na kterých si můžete vyzkoušet import xml a json souborů.
+-   Při exportu se soubory exportují do složky export
